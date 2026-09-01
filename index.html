@@ -322,7 +322,7 @@ section{position:relative}
 .center-cta{text-align:center;margin-top:3.2rem}
 
 /* destaques */
-.grid-top{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.grid-top{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.6rem}
 .card-top{
   background:rgba(255,255,255,.9);
   border:1px solid var(--rose-lite);
@@ -337,32 +337,15 @@ section{position:relative}
 .card-top .card-ico{background:linear-gradient(135deg,var(--rose-lite),rgba(226,196,168,.45));color:var(--plum)}
 .card-top h3{font-size:1.21rem;font-weight:600;color:var(--plum);margin-bottom:.6rem}
 .card-top p{font-size:.88rem;color:var(--txt-soft);font-weight:300}
-
-/* areas de atuacao */
-.grid-areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-.card-area{
-  background:#fff;border:1px solid var(--line);
-  border-radius:8px 46px 8px 46px;
-  padding:2.1rem 1.8rem;
-  box-shadow:0 10px 28px rgba(58,33,54,.06);
-  transition:transform .4s cubic-bezier(.2,.7,.3,1), box-shadow .4s ease, border-color .4s ease;
+.card-top h3{padding-bottom:.95rem;margin-bottom:1.1rem;border-bottom:1px solid var(--line)}
+.sign-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.sign-list li{
+  display:flex;align-items:flex-start;gap:.65rem;
+  font-size:.92rem;color:var(--txt-soft);font-weight:300;line-height:1.55;
 }
-.card-area:hover{transform:translateY(-8px);box-shadow:var(--shadow-deep);border-color:var(--rose-lite)}
-.card-area .card-ico{width:48px;height:48px;border-radius:14px;margin-bottom:1.1rem}
-.card-area .card-ico svg{width:23px;height:23px}
-.card-area h3{
-  font-size:1.05rem;font-weight:600;color:var(--plum);
-  margin-bottom:1.1rem;padding-bottom:.9rem;line-height:1.3;
-  border-bottom:1px solid var(--line);
-}
-.card-area ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
-.card-area li{
-  display:flex;align-items:flex-start;gap:.6rem;
-  font-size:.9rem;color:var(--txt-soft);font-weight:300;line-height:1.5;
-}
-.card-area li::before{
-  content:'';width:5px;height:5px;border-radius:50%;
-  background:var(--rose);flex-shrink:0;margin-top:.55rem;
+.sign-list li::before{
+  content:'';width:6px;height:6px;border-radius:50%;
+  background:var(--rose);flex-shrink:0;margin-top:.52rem;
 }
 
 /* ================= TIMELINE ================= */
@@ -581,6 +564,7 @@ section{position:relative}
     <div class="nav-links">
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
+      <a href="#sinais">Quando procurar</a>
       <a href="#atendimento">Como funciona</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#espaco">Espaço</a>
@@ -603,7 +587,7 @@ section{position:relative}
     </button>
     <a href="#sobre" onclick="closeMenu()">Sobre</a>
     <a href="#servicos" onclick="closeMenu()">Serviços</a>
-    <a href="#areas" onclick="closeMenu()">Áreas de atuação</a>
+    <a href="#sinais" onclick="closeMenu()">Quando procurar</a>
     <a href="#atendimento" onclick="closeMenu()">Como funciona</a>
     <a href="#depoimentos" onclick="closeMenu()">Depoimentos</a>
     <a href="#agendar" onclick="closeMenu()">Agendamento</a>
@@ -724,7 +708,7 @@ section{position:relative}
       <div class="card-serv rv">
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18.5a3.5 3.5 0 1 0 7 0c0-1.57.92-2.52 2.04-3.46A6 6 0 1 0 6 10"/><path d="M6 10a2 2 0 1 1 4 0c0 1.38-2 2-2 4"/><path d="M8 18h.01"/></svg></div>
         <h3>Audiologia e processamento auditivo</h3>
-        <p>Avaliação da audição, reabilitação auditiva e trabalho com o processamento auditivo central em crianças e adultos.</p>
+        <p>Avaliação da audição, reabilitação auditiva, audiologia educacional e trabalho com o processamento auditivo central.</p>
       </div>
 
       <div class="card-serv rv">
@@ -755,90 +739,49 @@ section{position:relative}
   </div>
 </section>
 
-<!-- ================= DESTAQUES ================= -->
-<section class="sec bg-navy">
+<!-- ================= QUANDO PROCURAR ================= -->
+<section class="sec bg-navy" id="sinais">
   <div class="wrap">
     <div class="sec-head rv">
-      <h2>Atendimentos em destaque</h2>
-      <p>Três frentes que trago com mais profundidade, por conta da formação e da experiência de mais de vinte anos de clínica.</p>
+      <h2>Quando procurar uma fonoaudióloga</h2>
+      <p>Estes são os sinais que mais trazem gente ao consultório. Se você reconhecer algum, já vale uma conversa.</p>
     </div>
 
     <div class="grid-top">
       <div class="card-top rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18.5a3.5 3.5 0 1 0 7 0c0-1.57.92-2.52 2.04-3.46A6 6 0 1 0 6 10"/><path d="M6 10a2 2 0 1 1 4 0c0 1.38-2 2-2 4"/></svg></div>
-        <h3>Processamento auditivo central</h3>
-        <p>Para quem ouve bem, mas se perde no que é dito: entende errado, pede para repetir e se distrai em ambientes com barulho.</p>
-      </div>
-
-      <div class="card-top rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M9 7h7M9 11h5"/></svg></div>
-        <h3>Dificuldades de alfabetização</h3>
-        <p>Crianças que travam na leitura e na escrita, com atenção especial à consciência fonológica e à dislexia.</p>
-      </div>
-
-      <div class="card-top rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M2 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/><path d="M19 8v6M22 11h-6"/></svg></div>
-        <h3>Comunicação no autismo e nas deficiências</h3>
-        <p>Construção da comunicação passo a passo, com recursos visuais, PECS e Libras quando o caso pede.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= AREAS DE ATUACAO ================= -->
-<section class="sec tight" id="areas">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <h2>Áreas de atuação</h2>
-      <p>Se a sua dúvida está em alguma dessas áreas, é só chamar no WhatsApp para conversar.</p>
-    </div>
-
-    <div class="grid-areas">
-      <div class="card-area rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M9 7h7M9 11h5"/></svg></div>
-        <h3>Linguagem e aprendizagem</h3>
-        <ul>
-          <li>Linguagem oral</li>
-          <li>Linguagem escrita</li>
-          <li>Alfabetização</li>
-          <li>Consciência fonológica</li>
-          <li>Dislexia</li>
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M2 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/><path d="M17 6c1.5 0 2.5 1 2.5 2.5S18.5 11 17 11"/></svg></div>
+        <h3>Em crianças</h3>
+        <ul class="sign-list">
+          <li>Demora para começar a falar ou fala pouco para a idade</li>
+          <li>Troca, omite ou distorce sons que já deveria pronunciar</li>
+          <li>Só é entendida por quem convive todos os dias com ela</li>
+          <li>Trava, repete sílabas ou gagueja ao contar alguma coisa</li>
+          <li>Pede para repetir com frequência e se perde no barulho da sala</li>
+          <li>Não engrena na leitura e na escrita no ritmo da turma</li>
+          <li>Respira pela boca ou tem dificuldade para mastigar e engolir</li>
         </ul>
       </div>
 
-      <div class="card-area rv">
+      <div class="card-top rv">
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg></div>
-        <h3>Fala e voz</h3>
-        <ul>
-          <li>Fala</li>
-          <li>Gagueira</li>
-          <li>Voz</li>
-          <li>Motricidade orofacial</li>
+        <h3>Em adultos</h3>
+        <ul class="sign-list">
+          <li>Rouquidão que não passa ou voz que some no fim do dia</li>
+          <li>Cansaço para falar em quem usa a voz no trabalho</li>
+          <li>Dificuldade para acompanhar conversa em lugar movimentado</li>
+          <li>Perda de audição ou adaptação a aparelho auditivo</li>
+          <li>Gagueira que atrapalha em reuniões e apresentações</li>
+          <li>Dificuldade de leitura e escrita que ficou desde a infância</li>
+          <li>Comunicação que foi mudando com o envelhecimento</li>
         </ul>
       </div>
+    </div>
 
-      <div class="card-area rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18.5a3.5 3.5 0 1 0 7 0c0-1.57.92-2.52 2.04-3.46A6 6 0 1 0 6 10"/><path d="M6 10a2 2 0 1 1 4 0c0 1.38-2 2-2 4"/></svg></div>
-        <h3>Audição e surdez</h3>
-        <ul>
-          <li>Audição</li>
-          <li>Processamento auditivo</li>
-          <li>Audiologia educacional</li>
-          <li>Libras e linguagem sinalizada</li>
-          <li>Leitura labial</li>
-        </ul>
-      </div>
-
-      <div class="card-area rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M2 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/><path d="M19 8v6M22 11h-6"/></svg></div>
-        <h3>Desenvolvimento e inclusão</h3>
-        <ul>
-          <li>Autismo e TEA</li>
-          <li>Síndrome de Down</li>
-          <li>Deficiências</li>
-          <li>PECS e comunicação alternativa</li>
-        </ul>
-      </div>
+    <div class="center-cta rv">
+      <a href="https://wa.me/5535999999999?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" class="btn btn-gold">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Tirar minha dúvida
+      </a>
     </div>
   </div>
 </section>
