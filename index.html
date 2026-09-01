@@ -140,6 +140,19 @@ section{position:relative}
   .nav-links{display:none}
   .burger{display:flex}
 }
+@media(max-width:900px){
+  .nav{padding:.75rem 0}
+  .nav.scrolled{padding:.55rem 0}
+  .nav .logo{gap:.55rem}
+  .nav .logo-mark{width:34px;height:34px;border-radius:10px}
+  .nav .logo-mark svg{width:18px;height:18px}
+  .nav .logo-txt strong{font-size:.86rem;letter-spacing:.01em}
+  .nav .logo-txt span{display:none}
+  .burger{width:38px;height:38px;gap:5px}
+  .burger span{width:21px}
+  .burger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
 
 /* menu mobile */
 .mobile-menu{
@@ -208,14 +221,6 @@ section{position:relative}
 .hero-in{position:relative;z-index:3;display:block}
 .hero-copy{max-width:640px}
 
-.hero-eyebrow{
-  font-family:'Raleway',sans-serif;font-size:.8rem;font-weight:600;
-  letter-spacing:.22em;text-transform:uppercase;color:var(--plum-3);
-  margin-bottom:1.5rem;position:relative;padding-bottom:.9rem;
-}
-.hero-eyebrow::after{
-  content:'';position:absolute;left:0;bottom:0;width:46px;height:2px;background:var(--rose);
-}
 .hero h1{
   font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;line-height:1.14;
   color:var(--plum);letter-spacing:-.015em;margin-bottom:1.4rem;
@@ -615,8 +620,6 @@ section{position:relative}
 
   <div class="wrap hero-in">
     <div class="hero-copy">
-      <p class="hero-eyebrow">Cibele Cecconi Capovilla</p>
-
       <h1>Cuidar da <em>comunicação</em> em todas as fases da vida.</h1>
 
       <p class="sub">Fonoaudiologia clínica e educacional para crianças e adultos. Fala, linguagem, voz e audição, com avaliação cuidadosa antes de qualquer tratamento.</p>
